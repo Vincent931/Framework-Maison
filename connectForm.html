@@ -1,0 +1,20 @@
+    <img alt="background" class="background" src="./public/img/background.jpg"/>
+    <div class="form-connect">
+          <h2>Pour Accéder aux fonctionnalités de ce site, vous devez vous connecter<br><span class="mess">{message}</span></h2>
+          
+          <form class="form-connect" method="post" action="./index.php?action=valid-form-security">
+               <p>
+                    <label for="email">email</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input class="inp-connect" type="email" name="email" id="email"/>
+               </p>
+               <p>
+                    <label for="password">password</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input class="inp-connect" type="password" name="password" id="password"/>
+               </p>
+               <input type="hidden" name="csrf" id="csrf" value="{%csrf%}"/>
+               <p class="p-form-connect">
+                    <input class="submit" type="submit" value="Envoyer"/>
+               </p>
+               <p class="p-link-create-account"><a title="créer un compte" class="a-link-create-account" href="./index.php?action=inscription">Créer un compte</a></p>
+          </form>
+     </div>

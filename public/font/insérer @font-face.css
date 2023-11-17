@@ -1,0 +1,78 @@
+@font-face
+/* @font-face    */
+/*Dans le CSS (avant les autres déclarations)*/
+@font-face {
+font-family: "Ma fonte";
+src: url("fonts/ma-fonte-regular.woff2") format("woff2"),url("fonts/ma-fonte-regular.woff") format("woff");
+}
+/*Dans le CSS (après...)*/
+p {
+font-family: "Ma fonte";
+}
+/*Il est possible de déclarer une déclinaison de la police (gras, italique...)...
+Dans le CSS (avant les autres déclarations)*/
+@font-face {
+font-family: "Ma fonte";
+font-weight: bold;
+src: url("fonts/ma-fonte-bold.woff2") format("woff2"),
+url("fonts/ma-fonte-bold.woff") format("woff");
+}
+
+
+/******************************************************************************************
+*******************************************************************************************
+******************************************************************************************/
+
+/*********************************Re Talking**********************************************/
+@font-face
+/* @font-face    */
+/*Dans le CSS (avant les autres déclarations)*/
+@font-face {
+font-family: "Ma fonte";
+src: url("fonts/ma-fonte-regular.woff2") format("woff2"),url("fonts/ma-fonte-regular.woff") format("woff");
+}
+/*Dans le CSS (après...)*/
+p {
+font-family: "Ma fonte";
+}
+/*Il est possible de déclarer une déclinaison de la police (gras, italique...)...
+Dans le CSS (avant les autres déclarations)*/
+@font-face {
+font-family: "Ma fonte";
+font-weight: bold;
+src: url("fonts/ma-fonte-bold.woff2") format("woff2"),
+url("fonts/ma-fonte-bold.woff") format("woff");
+}
+/************************* A SAVOIR Principales Polices **********************************/
+/*****************************************************************************************
+****************************sans-serif****************************************************/
+sans-serif Famille générique comprenant des
+polices sans empattement pour le texte
+d’usage général souvent préférées pour
+le rendu à l'écran à cause de limitations
+de résolution d’affichage. 
+/******************************************************************************************
+****************************serif**********************************************************/
+serif Famille générique comprenant des
+polices à empattement pour le texte
+d’usage général souvent préférées dans
+les documents imprimés.
+/******************************************************************************************
+****************************monospace******************************************************/
+monospace Famille générique comprenant des
+polices à chasse fixe permettant
+d’aligner verticalement les caractères
+de lignes successives, souvent utilisée
+pour l'affichage de code informatique. 
+/*****************************************************************************************
+***************************cursive*********************************************************/
+cursive Famille générique comprenant des
+polices proches de l’écriture manuscrite. 
+/*******************************************************************************************
+***************************fantasy*********************************************************/
+fantasy Famille générique comprenant des
+polices dites fantaisies ou décoratives
+(avec des enrichissements ou formes
+inhabituelles), et habituellement non
+destinée à la lecture de longs textes.
+
