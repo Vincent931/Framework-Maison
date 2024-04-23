@@ -1,0 +1,23 @@
+<div class="container-100 flex-col contenair-produits">
+     <div class="container-prod-erase flex-col">
+          <div class="product">
+               <div class="left-produit">
+                    <img class="img-produit" src="./public/img/{%image%}" alt="image du logement"/>
+                    <form method="post" action="./index.php?action=validate-erase-product">
+                         <input type="hidden" name="idToErase" id="idToErase" value="{%id%}"/>
+                         <input type="hidden" name="csrf" id="csrf" value="{%csrf%}"/>
+                         <input class="submit" type="submit" value="Confirmer Effacer"/>
+                    </form>
+                    <input type="hidden" id="input{%number%}"value="{%id%}"/>
+                </div>
+                <div class="right-produit">
+                    <div class="explications">{%explication%}</div>
+                    <p>Type : <span>{%type%}</span></p>
+                    <p>Charges : <span>{%charges%}</span>€</p>
+                    <p>Notaire : <span>{%notaire%}</span>€</p>
+                    <p>Prix : <span>{%prix%}</span>€</p>
+                    <p>Réf : <span>{%ref%}</span></p>
+               </div>
+          </div>
+     </div>
+</div>

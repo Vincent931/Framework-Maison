@@ -1,0 +1,82 @@
+/******************************************************************************/
+/* Attention ce css 'est pas responsive, utilisation d'un PC recommandé pour l'administration */
+/******************************************************************************/
+/* menu-haut */
+nav *{
+margin:0;
+padding:0;
+}
+nav{
+  width:100%;
+  margin:0 auto;
+  background:#452B2B;
+  padding:0;
+  position: sticky;
+  top:0;
+}
+nav ul{
+  list-style-type: none;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+nav ul li{
+  width:250px;
+  text-align:center;
+  position:relative;
+  color: white;
+  display: flex;
+}
+ul li:hover ul{
+  display:flex;
+  flex-direction: column;
+  position:relative;
+  left:-67px;
+  top:60px;
+  z-index:2;
+  background:#452B2B;
+  color:white;
+  text-align: center;
+  padding-left: 15px;
+}
+ul ul{
+  display:none;
+}
+nav a{
+  display: block;
+  text-decoration:none;
+  color: white;
+  border-bottom:2px solid transparent;
+  padding:10px 0px;
+  text-align:center;
+}
+nav a:hover{
+  background:#289AFE;
+  border-bottom:2px solid green;
+  color: white;
+}
+.a_admin{
+  text-decoration: none;
+}
+
+/*fin menu haut*/
+/****************************************************************************************************/
+h1{
+     text-align:center;
+     margin:auto;
+}
+/*erase image*/
+.blo-img{
+  width:250px;
+  margin: auto;
+}
+.img-produit{
+  width:250px;
+}
+.block-images{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 60px auto 60px auto;
+}

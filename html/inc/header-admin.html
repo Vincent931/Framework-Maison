@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="./public/img/logo.png" />
+	<!--bootstrap-->
+	<link rel="stylesheet" href="./public/css/bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="./public/css/bootstrap/css/bootstrap-grid.min.css"/>
+	<link rel="stylesheet" href="./public/css/bootstrap/css/bootstrap-utilities.min.css"/>
+	<link rel="stylesheet" href="./public/css/bootstrap/css/bootstrap-reboot.min.css"/>
+	<!--booostrap end-->
+	<link rel="stylesheet" href="./public/css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="./public/css/admin.css" type="text/css"/>
+	<title>{title}</title>
+	<meta name="description" content="{description}"/>
+</head>
+<header>
+     <nav class="nav_admin">
+       <ul>
+          <li><a>Ajouter</a>
+          	<ul>
+          		<li><a title="produit create" class="a_admin" href="./index.php?action=add-product">Produit</a></li>
+          		<li><a title="image create" class="a_admin"  href="./index.php?action=add-image">Image</a></li>
+          	</ul>
+          </li>
+          <li><a>Effacer</a>
+          	<ul>
+          		<li><a title="produit erase" class="a_admin" href="./index.php?action=erase-update-product">Produit</a></li>
+          		<li><a title="image erase" class="a_admin" href="./index.php?action=erase-image">Image</a></li>
+          	</ul>
+          </li>
+          <li>
+          	<a title="modif produit" href="./index.php?action=erase-update-product">Modifier produit</a>
+          <li>
+          	<a title="retour sur site" href="./index.php?action=accueil">Retour sur Site</a>
+          </li>
+       </ul>  
+     </nav>
+</header>

@@ -1,0 +1,31 @@
+<img alt="background" class="background" src="./public/img/background.jpg"/>
+<div class="container-100 flex-col contenair-prod">
+    <div class="row slick2"><!--marge_x_left marge-top-->
+		<button type="button" class="arrow2 prev2"><</button>
+		<div class="slider2"  dir="rtl" data-slick='{"slidesToShow": 1, "slidesToScroll": 4}'>
+    		<div class="div12"><img data-lazy="./public/img/{%imgP%}" src="./public/img/{%imgP%}" alt="image une"/></div>
+    		<div class="div12"><img data-lazy="./public/img/{%img1%}" src="./public/img/{%img1%}" alt="image deux"/></div>
+    		<div class="div12"><img data-lazy="./public/img/{%img2%}" src="./public/img/{%img2%}" alt="image trois"/></div>
+    		<div class="div12"><img data-lazy="./public/img/{%img3%}" src="./public/img/{%img3%}" alt="image quatre"/></div>
+    		<div class="div12"><img data-lazy="./public/img/{%img4%}" src="./public/img/{%img4%}" alt="image cinq"/></div>
+    	</div>
+    	<button type="button" class="arrow2 aft2">></button>
+    </div>
+
+    <input type="hidden" name="valid" id="valid" value="{%id%}"/>
+    <button class="bouton-prefere2" id="bouton">j'aime</button>
+    <div class="explications-prod-one">{%explic%}</div>
+        <p>Type : <span>{%type%}</span></p>
+        <p>Pièces : <span>{%pieces%}</span></p>
+        <p>Garage : <span>{%garage%}</span></p>
+        <p>SdB : <span>{%SdB%}</span></p>
+        <p>Charges : <span>{%charges%}</span>€</p>
+        <p>Notaire : <span>{%notaire%}</span>€</p>
+        <p>Prix : <span>{%prix%}</span>€</p>
+        <p>Adresse : <span>{%adress1%}</span></p>
+        <p>Complément : <span>{%adress2%}</span></p>
+        <p><span>{%ZIP%}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>{%ville%}</span></p>
+        <p>Référence : <span>{%ref%}</span></p>
+        <a title="retour" href="./index.php?action=products" class="bouton-prefere bout-prod a-prod-one1">Retour</a>
+    </div>
+</div>

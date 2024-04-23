@@ -1,0 +1,35 @@
+<div class="number-favori">
+     Favori: <span class="blue">{%numberFavori%}</span>
+</div>
+<div class="container-favo">
+    <div class="row-princ-imgs"><!--marge_x_left marge-top-->
+	     <div class="row1-favo">
+         		<img class="img-favo-1" src="./public/img/{%imgP%}" alt="image une"/>
+         	</div>
+         	<div class="row2-favo">
+         		<img class="img-favo-2" src="./public/img/{%img1%}" alt="image deux"/>
+         		<img class="img-favo-2" src="./public/img/{%img2%}" alt="image trois"/>
+         	</div>
+         	<div class="row2-favo">
+         		<img class="img-favo-2" src="./public/img/{%img3%}" alt="image quatre"/>
+         		<img class="img-favo-2" src="./public/img/{%img4%}" alt="image cinq"/>
+    	     </div>
+    </div>
+    <form class="form-favo" method="post" action="index.php?action=erase-favori">
+         <input type="hidden" name="id" value="{%id%}"/>
+         <input type="hidden" name="csrf" value="{%csrf%}"/>
+         <input type="submit" value="Effacer" class="bouton-prefere bout-prod a-prod-one"/>
+    </form>
+    <div class="explications-favo">{%explic%}</div>
+     <p>Type : <span>{%type%}</span></p>
+     <p>Pièces : <span>{%pieces%}</span></p>
+     <p>Garage : <span>{%garage%}</span></p>
+     <p>SdB : <span>{%SdB%}</span></p>
+     <p>Charges : <span>{%charges%}</span>€</p>
+     <p>Notaire : <span>{%notaire%}</span>€</p>
+     <p>Prix : <span>{%prix%}</span>€</p>
+     <p>Adresse : <span>{%adress1%}</span></p>
+     <p>Complément : <span>{%adress2%}</span></p>
+     <p><span>{%ZIP%}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>{%ville%}</span></p>
+     <p>Référence : <span>{%ref%}</span></p>
+</div>

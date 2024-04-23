@@ -1,0 +1,147 @@
+<img alt="background" class="background" src="./public/img/background.jpg"/>
+		<br><br><br>
+		<h1>Ajouter un produit</h1>
+		<br>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2 marg-30 text-al-cent">
+					<p>
+						<a title="listing des images" class="a-window-img" href="./index.php?action=window-img" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=250px,height=360'); return false;">Listing des images</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 text-al-cent marge_center">
+				<form class="row g-3" method="post" action="./index.php?action=validate-add-product">
+				    <div class="col-md-4">
+				    	<label for="ref" class="form-label">Référence</label>
+				    	<input type="text" class="form-control" id="ref" name="ref" required/>
+				  	</div>
+
+				  	<div class="col-md-4">
+				    	<label for="type" class="form-label">Type</label>
+				    	<select id="type" name="type" class="form-select">
+				      		<option value="location">Location</option>
+				      		<option value="achat">Achat</option>
+				    	</select>
+				  	</div>
+
+				  	<div class="col-md-4">
+				    	<label for="pieces" class="form-label">Pièces (T1, T2..etc)</label>
+				    	<select id="pieces" name="pieces" class="form-select">
+				      		<option value="T1">T1</option>
+				      		<option value="T1 bis">T1 bis</option>
+				      		<option value="T2">T2</option>
+				      		<option value="T3">T3</option>
+				      		<option value="T4">T4</option>
+				      		<option value="T5">T5</option>
+				      		<option value="T55">T5+</option>
+				    	</select>
+				  	</div>
+
+				  	<!--ligne2-->
+				  	<div class="col-md-4">
+				    	<label for="garage" class="form-label">Garage</label>
+				    	<select id="garage" name="garage" class="form-select">
+				      		<option value="oui">oui</option>
+				      		<option value="non">non</option>
+				    	</select>
+				  	</div>
+
+				  	<div class="col-md-4">
+				    	<label for="SdB" class="form-label">Salles de Bains</label>
+				    	<select id="SdB" name="SdB" class="form-select">
+				      		<option value="1">1</option>
+				      		<option value="2">2</option>
+				      		<option value="2+">2+</option>
+				    	</select>
+				  	</div>
+
+					<div class="col-md-4">
+				    	&nbsp;
+				  	</div>
+
+				  	<!--ligne3-->
+				  	<div class="col-md-4">
+				    	<label for="prix" class="form-label">Prix (Tot si achat/Mensuel si loc)</label>
+				    	<input type="number" class="form-control" id="prix" name="prix" required/>
+				  	</div>
+
+				  	<div class="col-md-4">
+				    	<label for="charges" class="form-label">Charges (si loc ou 0)</label>
+				    	<input type="number" class="form-control" id="charges" name="charges" required/>
+				  	</div>
+
+				  	<div class="col-md-4">
+				    	<label for="notaire" class="form-label">Frais Notaire (si achat ou 0)</label>
+				    	<input type="number" class="form-control" id="notaire" name="notaire" required/>
+				  	</div>
+
+				  	<!--ligne4-->
+				  	<div class="col-md-12">
+					  	<label for="explic" class="form-label">Texte</label>
+					  	<textarea class="form-control" id="explic" rows="6" name="explic" required></textarea>
+				  	</div>
+
+				  	<!--ligne5-->
+				  	<div class="col-md-4">
+				    	<label for="img_p" class="form-label">Image Principale</label>
+				    	<input type="text" class="form-control" id="img_p" name="img_p" required />
+				  	</div>
+
+				  	<div class="col-md-4">
+				    	<label for="img_1" class="form-label">Image 1</label>
+				    	<input type="text" class="form-control" id="img_1" name="img_1" required/>
+				  	</div>
+
+				  	<div class="col-md-4">
+				    	<label for="img_2" class="form-label">Image 2</label>
+				    	<input type="text" class="form-control" id="img_2" name="img_2" required/>
+				  	</div>
+
+				  	<!--ligne6-->
+				  	<div class="col-md-4">
+				    	<label for="img_3" class="form-label">Image 3</label>
+				    	<input type="text" class="form-control" id="img_3" name="img_3" required/>
+				  	</div>
+
+				  	<div class="col-md-4">
+				    	<label for="img_4" class="form-label">Image 4</label>
+				    	<input type="text" class="form-control" id="img_4" name="img_4" required/>
+				  	</div>
+
+				  	<div class="col-md-4">
+				    	&nbsp;
+				  	</div>
+
+				  	<!--ligne7-->
+				  	<div class="col-md-6">
+				    	<label for="adress1" class="form-label">Adresse 1</label>
+				    	<input type="text" class="form-control" id="adress1" placeholder="123 bd clémenceau, 41 rue Imbert" name="adress1"  required/>
+				  	</div>
+
+				  	<div class="col-md-6">
+				    	<label for="adress2" class="form-label">Adresse 2</label>
+				    	<input type="text" class="form-control" id="adress2" placeholder="Apt 105, Tour 2 etc..." name="adress2" required/>
+				  	</div>
+
+				  	<!--ligne8-->
+				  	<div class="col-md-6">
+				    	<label for="ville" class="form-label">Ville</label>
+				    	<input type="text" class="form-control" id="ville" name="ville" required/>
+				  	</div>
+
+				  	<div class="col-md-6">
+				    	<label for="ZIP" class="form-label">CP</label>
+				    	<input type="number" class="form-control" id="ZIP" name="ZIP" required/>
+				  	</div>
+				  	<input type="hidden" name="csrf" id="csrf" value="{%csrf%}"/>
+				  	<!--ligne9-->
+				  	<div class="col-md1">
+				    	<input type="submit" value="envoyer" class="btn btn-primary">
+				  	</div>
+
+				</form>
+			</div>
+			<br><br><br>
+		</div>

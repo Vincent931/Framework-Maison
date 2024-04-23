@@ -1,0 +1,40 @@
+<body>
+<main>
+<img alt="background" class="background" src="./public/img/background.jpg"/>   
+     <div class="container-100 text-al-cent cont-T">
+          <h1>Trouver votre futur lieu de vie ici ...</h1>
+          <form class="checkb-pieces" method="post" action="./index.php?action=products">
+               <p><label for="T1">T1</label>&nbsp;&nbsp;
+               <input type="radio" name="rooms" id="T1" value="T1" {%checked1%}/>&nbsp;&nbsp;
+               <label for="T1_bis">T1 bis</label>&nbsp;&nbsp;
+               <input type="radio" name="rooms" id="T1_bis" value="T1 bis" {%checked2%}/>&nbsp;&nbsp;
+               <label for="T2">T2</label>&nbsp;&nbsp;
+               <input type="radio" name="rooms" id="T2" value="T2" {%checked3%}/>&nbsp;&nbsp;
+               <label for="T3">T3</label>&nbsp;&nbsp;
+               <input type="radio" name="rooms" id="T3" value="T3" {%checked4%}/>&nbsp;&nbsp;
+               <label for="T4">T4</label>&nbsp;&nbsp;
+               <input type="radio" name="rooms" id="T4" value="T4" {%checked5%}/>&nbsp;&nbsp;
+               <label for="T5">T5</label>&nbsp;&nbsp;
+               <input type="radio" name="rooms" id="T5" value="T5" {%checked6%}/>&nbsp;&nbsp;
+               <label for="T55">T5+</label>&nbsp;&nbsp;
+               <input type="radio" name="rooms" id="T55" value="T55" {%checked7%}/></p>
+               <p><button class="bouton-type-rech" type="submit"/>filtrer</button></p>
+          </form>
+     </div>
+<!--modal bootstrap-->
+<div class="modal modal-fullscreen-sm-down" id="myModal" tabindex="-1">
+     <div class="modal-dialog">
+          <div class="modal-content">
+               <div class="modal-header">
+                     <h5 class="modal-title">Vous avez ajouté cettte annonce à vos favoris</h5>
+               </div>
+               <div class="modal-body">
+                    <p><a title="preferences" class="a-modale" href="./index.php?action=favoris">Ouvrir vos préférences ici</a></p>
+               </div>
+               <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+               </div>
+          </div>
+     </div>
+</div>
+<!--end modal bootstrap-->

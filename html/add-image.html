@@ -1,0 +1,23 @@
+<img alt="background" class="background" src="./public/img/background.jpg"/>
+		<br><br><br>
+		<h1>Ajouter une image</h1>
+		<br>
+<form method="post" action="./index.php?action=validate-add-image" enctype="multipart/form-data">
+	<div class="mb-3">
+		<!-- MAX_FILE_SIZE doit précéder le champ input de type file -->
+     	<input type="hidden" name="MAX_FILE_SIZE" value="5000000" />	
+		<input type="hidden" name="csrf" value="{%csrf%}" />
+		
+		<label for="image" class="form-label">Charger image</label>
+	  	<input class="form-control form-control-lg" name="image" id="image" type="file" required>
+	  	
+	  	<label for="nameF" class="form-label">Nom à donner à cette image (sans le .jpg ou le .png)</label>
+	  	<input type="text" class="form-control form-control-lg" name="nameF" id="nameF" required>
+	  	
+	  	<label for="description" class="form-label">Description de l'image</label>
+	  	<input type="text" class="form-control form-control-lg" name="description" id="description" required>
+	  	
+	  	<input type="submit" name="submit" value="Charger"/>
+	</div>
+</form>
+        
