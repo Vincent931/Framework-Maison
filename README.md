@@ -1,4 +1,4 @@
-Add your values to environnement.php (ip, user, password, nameofbdd, smtp-server, emaildomain and passworofyouremail),
+Add your values to environnement.php (ip, user, password, nameofbdd, smtp-server, emaildomain and passwordrofyouremail),
 You can use your super-agence.SQL to configure PHPMyadmin,
 Change email on user table with role=admin to be admin,
 http://mydomain"/index.php?action=admin" is the path for your url to access your admin,
